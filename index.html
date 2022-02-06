@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav>
+    <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+    <a href="#" class="nav-btn">Try it free</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does 
+        your audience. Create connections with your users as you engage in genuine discussion</p>
+        <a href="#" class="hero-btn">Get Started For Free</a>
+    </div>
+
+    <div class="hero__image">
+      <img src="./images/screen-mockups.svg" alt="hero-image">
+    </div>
+  </header>
+
+    <section class="info">
+      <section class="info-cards">
+        <div class="info-card info-card-1">
+          <img src="./images/icon-communities.svg" alt="icon-communities">
+          <h1>1.4k+</h1>
+          <p>Communities Formed</p>
+        </div>
+        <div class="info-card info-card-2">
+          <img src="./images/icon-messages.svg" alt="icon-communities">
+          <h1>2.7m+</h1>
+          <p>Messages Sent</p>
+        </div>
+      </section>
+    </section>
+
+
+    <section class="cards">
+      <div class="full-card">
+        <picture class="pattern">
+          <source
+            srcset="images/bg-section-top-desktop-1.svg"
+            media="(min-width: 1000px)"
+          />
+          <img src="images/bg-section-top-mobile-1.svg" aria-disabled="true" />
+        </picture>
+        <div class="card card-1">
+          <div class="card-content">
+            <h1>Grow Together</h1>
+            <p>Generate meaningful discussions with your audience and build a strong, loyal community.
+              Think of the insightful conversations you miss out on with a feedback form. </p>
+          </div>
+            <img class="illustration" src="./images/illustration-grow-together.svg" alt="">
+        </div>
+        <picture class="pattern">
+          <source
+            srcset="images/bg-section-bottom-desktop-1.svg"
+            media="(min-width: 1000px)"
+          />
+          <img src="images/bg-section-bottom-desktop-1.svg" aria-disabled="true" />
+        </picture>
+      </div>
+
+      
+      <div class="full-card">
+        <div class="card card-2">
+          <img class="illustration" src="./images/illustration-flowing-conversation.svg" alt="">
+          <div class="card-content">
+            <h1>Flowing Conversations</h1>
+            <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+              just-in-time loading for a more natural flow.</p>
+          </div>
+           
+        </div>
+      </div>
+
+
+
+
+      <div class="full-card">
+        <picture class="pattern">
+          <source
+            srcset="images/bg-section-top-desktop-2.svg"
+            media="(min-width: 1000px)"
+          />
+          <img src="images/bg-section-top-desktop-2.svg" aria-disabled="true" />
+        </picture>
+        <div class="card card-3">
+          <div class="card-content">
+            <h1>Your Users</h1>
+            <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+              once signed in to your app, your users can start chatting immediately.</p>
+          </div>
+            <img class="illustration" src="./images/illustration-your-users.svg" alt="">
+        </div>
+        <picture class="pattern">
+          <source
+            srcset="images/bg-section-bottom-desktop-2.svg"
+            media="(min-width: 1000px)"
+          />
+          <img src="images/bg-section-bottom-desktop-2.svg" aria-disabled="true" />
+        </picture>
+      </div>
+    </section>
+
+
+    <section class="ending">
+      <div class="hero-content">
+        <h1>Ready To Build Your Community?</h1>
+          <a href="#" class="hero-btn">Get Started For Free</a>
+      </div>
+    </section>
+
+
+
+    <source
+    srcset="images/bg-footer-top-desktop.svg"
+    media="(min-width: 1000px)"
+  />
+  <img src="images/bg-footer-top-mobile.svg"  />
+</picture>
+    <footer class="footer">
+      <div class="footer-content">
+        
+        <div class="footer-content-1">
+          <div class="footer-logo"><img src="./images/logo-white.svg" alt=""></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+            vestibulum a, ultrices quis sem.</p>
+            <div class="contact">
+              <p><img class="icon" src="./images/icon-phone.svg" alt="">Phone: +1-543-123-4567</p>
+              <p><img class="icon" src="./images/icon-email.svg" alt="">example@huddle.com</p>
+            </div>
+
+            <div class="social-icons">
+              <i class="social-icon fab fa-facebook-square"></i>
+              <i class="social-icon fab fa-instagram"></i>
+              <i class="social-icon fab fa-twitter-square"></i>
+            </div>
+        </div>
+      
+
+        <div class="footer-content-2">
+          <h2>newsletter</h2>
+          <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+            send you spam or pass on your email address</p>
+            <form action="#">
+              <input type="email" required name="email" class="input">
+              <a href="#" class="submit-btn">Submit</a>
+            </form>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+:root {
+    --clr-pink:hsl(322 100% 66%);
+    --clr-light-pink:hsl(321 100% 78%);
+    --clr-light-red:hsl(0 100% 63%);
+    --clr-vdark-cyan:hsl(192 100% 9%);
+    --clr-vpale-blue:hsl(207 100% 98%);
+    --ff-poppin:'Poppins';
+    --ff-opensans:'Open Sans';
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff-opensans);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a,a:visited {
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+picture,img{
+  width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+nav {
+    display: flex;
+    margin: 3.75rem 3.75rem;
+    align-content: center;
+    justify-content: space-between;
+}
+
+nav a img {
+    object-fit: contain;
+}
+
+nav *:nth-child(2) {
+    color: var(--clr-pink);
+    border: 1px solid;
+    padding: 0.8125rem 1.875rem;
+    border-radius: 100px;
+    transition: opacity 0.5s ease;
+    white-space: nowrap;
+}
+
+nav *:nth-child(2):hover {
+    opacity: 0.5;
+}
+
+.hero {
+    padding: 0 30px;
+}
+
+.hero {
+  margin: 150px 0px 100px 0;
+}
+
+.hero-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero__image img {
+  width: 1050px;
+}
+
+.hero-content h1{
+  color: var(--clr-vdark-cyan);
+    font-size: 45px;
+    font-family: var(--ff-poppin);
+}
+
+.hero-content p {
+    width: 65ch;
+    text-align: center;
+    padding: 1.5rem clamp(1rem, 5%, 3rem);
+    margin: 10px 0 40px 0;
+    font-family: var(--ff-opensans);
+    font-size: 18px;
+}
+
+.hero-btn {
+    display: inline-block;
+    border-radius: 100px;
+    background-color: var(--clr-light-pink);
+    color: white;
+    padding: 1.5625rem 4.375rem;
+    margin-bottom: 5.625rem;
+    transition: opacity 0.5s ease;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-btn:hover { 
+  opacity: 0.6;
+}
+
+
+.info {
+  display: grid;
+  place-content: center;
+}
+
+.info-cards {
+  display: flex;
+  gap: 25rem;
+}
+
+.info-card h1{
+  color: var(--clr-vdark-cyan);
+  font-size: 70px;
+}
+.info-card p{
+  opacity: 0.6;
+  text-align: center;
+}
+
+.info-card img {
+  width: 35px;
+}
+
+.full-card {
+  margin-top: 100px;
+}
+
+
+.cards {
+  display: flex;
+  flex-direction:column ;
+}
+
+.card {
+  padding: 0 40px;
+  background-color: var(--clr-vpale-blue);
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  /* margin: 80px 0; */
+}
+
+.card-content {
+  width: 55ch;
+  margin: 0 40px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.illustration {
+  width: 600px;
+}
+
+.card-content h1{
+  font-family: var(--ff-poppin);
+  color: var(--clr-vdark-cyan);
+  font-size: 50px;
+}
+
+
+picture {
+  width: 100%;
+}
+
+.card-2 { 
+  background-color: white;
+}
+
+.card-2 .card-content h1 {
+  font-size: 40px;
+}
+
+.card-2 .card-content p {
+  width: 56ch;
+}
+
+.card-3 .card-content p {
+  width: 57ch;
+}
+
+.card-2 .card-content { 
+  margin-left: 200px;
+}
+
+
+.ending {
+  margin-top: 200px;
+}
+
+.ending .hero-content .hero-btn {
+  margin-top: 60px;
+}
+
+footer {
+  background-color: var(--clr-vdark-cyan);
+}
+
+.footer-logo img{
+  width: 300px;
+}
+
+.footer-content {
+  display: flex;
+  gap: 25rem;
+  margin: 0 6rem;
+  padding: 4rem 0;
+  color: white;
+}
+
+.footer-content-1 p {
+  width: 40ch;
+  margin: 1.3rem 0;
+}
+
+.icon {
+  /* display: flex; */
+  display: inline-block;
+  width: 20px;
+  margin-right: 15px;
+}
+
+.footer-content-2 h2{
+  text-transform: uppercase;
+}
+
+.footer-content-2 p {
+  margin-top: 20px;
+  width: 42ch;
+}
+
+.footer-content-2 input{
+  margin-top: 20px;
+}
+
+.submit-btn {
+  background-color: var(--clr-light-pink);
+  display: inline-block;
+  padding: 10px 40px;
+  color: white;
+  margin-left: 20px;
+  font-weight: 600;
+  font-family: var(--ff-poppin);
+  transition: opacity 0.5s ease;
+}
+
+.footer-content-2 input[required] {
+  padding: 10px 0;
+  padding-right: 150px;
+  padding-left: 10px;
+  border-radius: 10px;
+} 
+
+.submit-btn:hover {
+  opacity: 0.8;
+}
+
+.social-icon {
+  margin: 10px 30px 0 5px;
+  transform: scale(2);
+  transition: color 0.5s ease;
+}
+
+.social-icon:hover {
+  color: cyan;
+}
